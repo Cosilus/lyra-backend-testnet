@@ -1,0 +1,35 @@
+﻿services:
+  - type: web
+    name: lyra-backend-testnet
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      # At least ONE AI provider key is needed for the chat to answer. Fill them in the Render
+      # dashboard (Environment tab): never put a key in this file.
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: AI_MODEL
+        value: qwen/qwen-2.5-7b-instruct
+      - key: MISTRAL_API_KEY
+        sync: false
+      - key: MISTRAL_MODEL
+        value: mistral-small-latest
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ANTHROPIC_MODEL
+        value: claude-sonnet-4-5-20250929
+      # Explorer data (history, contract checks). Free key from etherscan.io (v2 covers testnets).
+      - key: ETHERSCAN_API_KEY
+        sync: false
+      # Websites allowed to read responses. The extension itself is NOT limited by CORS
+      # (it has host permissions), this only keeps random web pages out.
+      - key: CORS_ORIGIN
+        value: https://lyrapp.to
+      # Per-IP limits (requests per minute). Raise them if real users hit them.
+      - key: RATE_LIMIT_AI_PER_MIN
+        value: "20"
+      - key: RATE_LIMIT_API_PER_MIN
+        value: "240"
+      # No MPC_MASTER_KEY and no DATABASE_URL: Extra protection is off on testnet.

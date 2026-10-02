@@ -1,0 +1,21 @@
+{
+  "name": "lyra-wallet-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.17.0",
+    "express": "^5.2.1",
+    "pg": "^8.23.1",
+    "undici": "^7.29.1"
+  }
+}
