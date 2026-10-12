@@ -1,0 +1,17 @@
+{
+  "wallets": {
+    "0x550e2b2623592c8ba903ab6cf1a59bed98220602": {
+      "fragment2Iv": "04aea780fc891033c7aec2f9",
+      "fragment2Ciphertext": "7dc6a6252358b1b66b7ec10ef8f247f43bf81fe5e24df2fbfd9d8b606125f964c995699cbb486f13acfbe21b8f3c3c63ed49793622b8ae6b3293a6d4d94ff31eaaef550b16f29eab2b331aa52b3a2e3d82d6",
+      "dailyLimitUsd": null,
+      "createdAt": 1790669694760
+    },
+    "0xf7de3d041ca2e44475eae763d98ae8402286de45": {
+      "fragment2Iv": "77414d50cbdeca33aeaa9e0f",
+      "fragment2Ciphertext": "faf97f8d2474fd09acd95cc4a5ed5654aa3b430a6a1e2cf21303b672a20a012ac797c2a93ac4f8bf11a52285ef010922a029b1db6c1603a196cbeaf22996128bfac385b23d954bd64934b67e4014a3de5e12",
+      "dailyLimitUsd": null,
+      "createdAt": 1790669706085
+    }
+  },
+  "spendLog": []
+}
